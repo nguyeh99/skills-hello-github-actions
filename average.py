@@ -4,7 +4,6 @@ def calculate_average(numbers):
 
     return sum(numbers) / len(numbers)
 
-print(calculate_average([10, 20, 30]))
 
 def calculate_maximum(numbers):
     if not numbers:
@@ -12,4 +11,6 @@ def calculate_maximum(numbers):
 
     return max(numbers)
 
-print(calculate_maximum([10, 20, 30]))
+if __name__ == "__main__":
+    print(calculate_average([10, 20, 30]))
+    print(calculate_maximum([10, 20, 30]))
