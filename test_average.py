@@ -1,5 +1,5 @@
 import unittest
-from average import calculate_average, calculate_maximum
+from average import calculate_average, calculate_maximum, calculate_minimum
 
 
 class TestCalculateAverage(unittest.TestCase):
@@ -83,6 +83,10 @@ class TestCalculateMaximum(unittest.TestCase):
 
     def test_none_returns_none(self):
         self.assertIsNone(calculate_maximum(None))
+
+class TestCalculateMinimum(unittest.TestCase):
+    def test_calculate_minimum(self):
+        self.assertEqual(calculate_minimum([10, 20, 30]), 10)
 
 
 if __name__ == '__main__':

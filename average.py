@@ -31,6 +31,12 @@ def calculate_maximum(numbers):
 
     return max(numbers)
 
+def calculate_minimum(numbers):
+    if not numbers:
+        return None
+
+    return min(numbers)
+
 
 if __name__ == "__main__":
     print(calculate_average([10, 20, 30]))
