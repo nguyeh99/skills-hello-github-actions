@@ -81,6 +81,9 @@ class TestCalculateMaximum(unittest.TestCase):
     def test_calculate_maximum(self):
         self.assertEqual(calculate_maximum([10, 20, 30]), 30)
 
+    def test_none_returns_none(self):
+        self.assertIsNone(calculate_maximum(None))
+
 
 if __name__ == '__main__':
     unittest.main()
