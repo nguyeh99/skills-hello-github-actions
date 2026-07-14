@@ -78,6 +78,10 @@ class TestCalculateMaximum(unittest.TestCase):
         """Test maximum when values are duplicated"""
         self.assertEqual(calculate_maximum([5, 5, 5]), 5)
 
+    def test_calculate_maximum(self):
+        self.assertEqual(calculate_maximum([10, 20, 30]), 30)
+
 
 if __name__ == '__main__':
     unittest.main()
+
